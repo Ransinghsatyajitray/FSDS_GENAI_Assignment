@@ -72,3 +72,7 @@ git push origin main
 # main.py is used for performing console based calculation
 # app.py is used for performing api based calculation
 # calculator.py contains the classes 
+
+
+
+# How do I make Git forget about a file that was tracked, but is now in .gitignore?
