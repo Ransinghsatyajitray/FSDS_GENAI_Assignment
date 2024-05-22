@@ -1,8 +1,8 @@
-# calculator.py
+# calculator01.py
 
 class Calculator2Numbers:
     """Hoping every one enters the right numbers"""
-    def __init__(self,num1,num2):
+    def __init__(self, num1, num2):
         self.__num1 = num1
         self.__num2 = num2
         
@@ -16,4 +16,4 @@ class Calculator2Numbers:
         return self.__num1 * self.__num2
     
     def div(self):
-        return self.__num1 / self.__num2    
+        return self.__num1 / self.__num2
