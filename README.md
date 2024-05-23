@@ -74,3 +74,30 @@ git push origin main
 # calculator.py contains the classes 
 
 
+# Logging Notes
+
+```bash
+logging.basicConfig(
+    level = logging.INFO, 
+    format = logging_str,
+    handlers=[logging.FileHandler(log_file)]
+    )
+
+logger = logging.getLogger()
+```
+
+This sets the root logger's level to INFO. By default, this means that only log messages with a level of INFO or higher (WARNING, ERROR, CRITICAL) will be recorded. DEBUG level messages are considered lower than INFO and will be ignored.
+
+
+
+
+To overwrite the logs instead of appending to the existing log file, you need to set the FileHandler mode to 'w' (write mode) when configuring logging. By default, FileHandler opens the file in append mode ('a'), which is why the logs are appended to the existing file.
+
+
+```bash
+logging.basicConfig(
+    level=logging.INFO, 
+    format=logging_str,
+    handlers=[logging.FileHandler(log_file, mode='w'), logging.StreamHandler()]  # Set mode='w' to overwrite log file
+)
+```
