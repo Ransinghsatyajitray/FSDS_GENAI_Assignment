@@ -64,10 +64,12 @@ git push origin main
 
 1. in console + using Class + try except + logging
 2. someone enters add as input the model takes Calculator.add()
-3. as API (only result in API) FastApi
-4. as API (only result in API) flask
-5. as API flask (Numbers entered are shown, Result is also shown)
-6. as API FastApi and streamlit
+3. taking multiple numbers as input in one go
+4. taking multiple input from json
+5. as API (only result in API) FastApi
+6. as API (only result in API) flask
+7. as API flask (Numbers entered are shown, Result is also shown)
+8. as API FastApi and streamlit
 
 
 # main.py is used for performing console based calculation
